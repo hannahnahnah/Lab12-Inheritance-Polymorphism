@@ -1,7 +1,6 @@
-import java.util.Scanner;
+
 
 public class Car {
-	Scanner scnr = new Scanner(System.in);
 
 	protected String carMake;
 	protected String carModel;

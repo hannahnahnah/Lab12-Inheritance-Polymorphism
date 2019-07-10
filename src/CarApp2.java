@@ -18,12 +18,6 @@ public class CarApp2 {
 		myCars.add(new Car("Kia", "Sorrento", 2020, 27335.00));
 		
 		
-		ArrayList<String> usedCars = new ArrayList<>();
-			usedCars.add(0, "(Used)");
-			usedCars.add(1, "(Used)");
-			usedCars.add(2, "(Used)");
-		
-		
 		System.out.printf("%-2s %-10s %-10s %-10s %-10s %-10s\n", "  ", "Make", "Model", "Year", "Price", "Mileage");	
 			
 		for (int i = 0; i < myCars.size(); ++i) {
@@ -38,11 +32,12 @@ public class CarApp2 {
 						  tempUsedCar.getCarMileage());
 				
 			} else {
-			System.out.printf("%-2d %-10s %-10s %-10d $%-10.2f\n", (i + 1), myCars.get(i).getCarMake(), 
-																			  myCars.get(i).getCarModel(), 
-																			  myCars.get(i).getCarYear(),
-																			  myCars.get(i).getCarPrice());
-		}																	  
+				System.out.printf("%-2d %-10s %-10s %-10d $%-10.2f\n", (i + 1), 
+						myCars.get(i).getCarMake(), 
+						myCars.get(i).getCarModel(), 
+						myCars.get(i).getCarYear(),
+						myCars.get(i).getCarPrice());
+			}																	  
 		}
 		
 		do {
